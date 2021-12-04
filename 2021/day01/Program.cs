@@ -8,12 +8,9 @@ namespace day01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             List<int> data = readIntegers("./input.txt");
-
             int solutionPart1 = part1(data);
             int solutionPart2 = part2(data);
-
             Console.WriteLine("Day 1 part 1, result: " + solutionPart1);
             Console.WriteLine("Day 1 part 2, result: " + solutionPart2);
         }
