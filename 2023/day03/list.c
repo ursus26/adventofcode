@@ -1,6 +1,7 @@
 #include "list.h"
 #include <assert.h>
 #include <string.h>
+#include <stdio.h>
 
 
 const size_t DEFAULT_CAPACITY = 64;
