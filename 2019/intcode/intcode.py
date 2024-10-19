@@ -26,7 +26,6 @@ class Intcode:
         self.stdout = stdout
 
     def run(self):
-
         while not self._done:
             self.step()
 
@@ -100,8 +99,6 @@ class Intcode:
         src_val1 = self._read_mem_mode(self._ip + 1, self._get_mode(param_modes, 0))
         src_val2 = self._read_mem_mode(self._ip + 2, self._get_mode(param_modes, 1))
         self._write_mem_mode(self._ip + 3, self._get_mode(param_modes, 2), src_val1 + src_val2)
-        # dst_pointer = self._program[self._ip+3]
-        # self._program[dst_pointer] = src_val1 + src_val2
         self._ip += 4
 
     def _mult(self, param_modes):
@@ -131,7 +128,6 @@ class Intcode:
     def _cond(self, param_modes, cond):
         param1 = self._read_mem_mode(self._ip + 1, self._get_mode(param_modes, 0))
         param2 = self._read_mem_mode(self._ip + 2, self._get_mode(param_modes, 1))
-        dst_pointer = self._program[self._ip+3]
 
         data = 0
         if cond is IntcodeCond.LESS_THAN:
