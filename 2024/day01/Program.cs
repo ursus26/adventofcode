@@ -21,11 +21,11 @@
 
             /* Part 1 */
             int solutionPart1 = ListDistance(list1, list2);
-            Console.WriteLine("Day 18 part 1, result: " + solutionPart1);
+            Console.WriteLine("Day 01 part 1, result: " + solutionPart1);
 
             /* Part 2 */
             int solutionPart2 = ListSimilarity(list1, list2);
-            Console.WriteLine("Day 18 part 2, result: " + solutionPart2);
+            Console.WriteLine("Day 01 part 2, result: " + solutionPart2);
         }
 
         static int ListDistance(List<int> list1, List<int> list2)
