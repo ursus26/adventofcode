@@ -74,6 +74,6 @@ func main() {
 		}
 	}
 
-	fmt.Printf("Day 01 part 1, result: %d\n", answerPart1)
-	fmt.Printf("Day 01 part 2, result: %d\n", answerPart2)
+	fmt.Printf("Day 02 part 1, result: %d\n", answerPart1)
+	fmt.Printf("Day 02 part 2, result: %d\n", answerPart2)
 }
